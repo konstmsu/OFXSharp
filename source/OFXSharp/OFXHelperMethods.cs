@@ -37,7 +37,7 @@ namespace OFXSharp
          }
          catch
          {
-            throw new OFXParseException("Unable to parse date");
+            throw new OFXParseException("Unable to parse date '{0}'".FormatWith(date));
          }
       }
 
